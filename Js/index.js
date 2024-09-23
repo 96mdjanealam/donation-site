@@ -16,12 +16,10 @@ document.getElementById("btn-history").addEventListener("click", function () {
 
 // Show active tab
 function showActiveTab(id) {
-
     document.getElementById("btn-donation").classList.remove("bg-lime-400");
     document.getElementById("btn-history").classList.remove("bg-lime-400");
     document.getElementById("btn-donation").classList.remove("border-2");
     document.getElementById("btn-history").classList.remove("border-2");
-
 
     document.getElementById(id).classList.add("bg-lime-400");
 }
@@ -91,11 +89,13 @@ function donationClickOperation(id1, id2, id3, id4) {
         `
         document.getElementById("history-section").appendChild(newDiv);
 
+        document.getElementById("dialog").classList.remove('hidden');
+        document.getElementById("close-dialog").addEventListener('click', function () {
+            document.getElementById('dialog').classList.add('hidden');
+        });
     });
 }
 
 donationClickOperation("btn-donation-1", "input-donation-1", "card-balance-1", "donation-1-text");
 donationClickOperation("btn-donation-2", "input-donation-2", "card-balance-2", "donation-2-text");
 donationClickOperation("btn-donation-3", "input-donation-3", "card-balance-3", "donation-3-text");
-
-

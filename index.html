@@ -57,7 +57,7 @@
                                 id="card-balance-1">0</span> BDT</p>
                         </div>
                         <h2 id="donation-1-text" class="font-bold">Flood relief for Comilla, Bangladesh</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, modi aperiam iste beatae consequuntur saepe sequi vero laboriosam voluptate in quae unde suscipit numquam a itaque velit ducimus doloribus recusandae quibusdam deserunt. Deleniti sed alias porro, consequatur, tempora voluptatum laborum, temporibus cumque natus animi voluptas modi esse ipsa sequi ratione.</p>
+                        <p>The recent floods in Comilla have left many families stranded without basic necessities. Homes have been destroyed, and access to food, clean water, and medical supplies is scarce. Your support can make a difference in helping these communities rebuild and recover.</p>
                     </div>
                     <div class="flex flex-col gap-3">
                         <input id="input-donation-1" class="border-2 w-full rounded-lg px-4 py-1.5" type="text">
@@ -78,7 +78,7 @@
                                 id="card-balance-2">0</span> BDT</p>
                         </div>
                         <h2 id="donation-2-text" class="font-bold">Food for flood affected people at Noakhali, Bangladesh</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, modi aperiam iste beatae consequuntur saepe sequi vero laboriosam voluptate in quae unde suscipit numquam a itaque velit ducimus doloribus recusandae quibusdam deserunt. Deleniti sed alias porro, consequatur, tempora voluptatum laborum, temporibus cumque natus animi voluptas modi esse ipsa sequi ratione.</p>
+                        <p>The devastating floods in Noakhali have caused widespread damage, displacing countless people. Urgent aid is needed to provide shelter, food, and healthcare to those affected. Please consider donating to help the people of Noakhali through this difficult time and restore hope to the region.</p>
                     </div>
                     <div class="flex flex-col gap-3">
                         <input id="input-donation-2" class="border-2 w-full rounded-lg px-4 py-1.5" type="text">
@@ -99,7 +99,7 @@
                                 id="card-balance-3">0</span> BDT</p>
                         </div>
                         <h2 id="donation-3-text" class="font-bold">Aid for injured in Quota Movement</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, modi aperiam iste beatae consequuntur saepe sequi vero laboriosam voluptate in quae unde suscipit numquam a itaque velit ducimus doloribus recusandae quibusdam deserunt. Deleniti sed alias porro, consequatur, tempora voluptatum laborum, temporibus cumque natus animi voluptas modi esse ipsa sequi ratione.</p>
+                        <p>Many students have been injured during the recent Quota Movement protests, and they urgently need medical care and support. Your contribution can help provide necessary treatments, medicine, and rehabilitation for these young individuals. Please consider donating to aid their recovery and well-being during this critical time.</p>
                     </div>
                     <div class="flex flex-col gap-3">
                         <input id="input-donation-3" class="border-2 w-full rounded-lg px-4 py-1.5" type="text">
@@ -108,8 +108,22 @@
                 </div>
             </div>
         </div>
+        <!-- dialog box -->
+        <div id="dialog" class="fixed inset-0 z-50 bg-gray-900 bg-opacity-50 hidden">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="bg-white rounded-lg py-6 px-10 flex flex-col items-center gap-4">
+                    <h1 class="font-bold text-2xl text-orange-500">Congrates !</h1>
+                    <img src="assets/coin.png" alt="">
+                    <p>You have donated for humankind</p>
+                    <p class="font-bold text-lg text-gray-700">Successfully</p>
+                    <button id="close-dialog" class="font-bold px-4 py-1.5 bg-lime-400 rounded-lg">Close</button>
+                </div>
+            </div>
+        </div>
+
+
         <!-- History section -->
-        <div id="history-section" class="flex flex-col gap-6 hidden">
+        <div id="history-section" class="space-y-6 hidden">
 
             <p id="no-history" class="bold text-center text-gray-500" >No history for now</p>
 
