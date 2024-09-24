@@ -18,21 +18,18 @@
 </head>
 
 <body class="lexend">
-    <header class=" fixed top-0 w-full bg-white bg-opacity-30 backdrop-blur-md shadow-md mb-4">
+    <header class=" fixed top-0 w-full bg-gray-500 backdrop-blur-md bg-opacity-30 shadow-md mb-4">
         <div class="">
             <nav class="w-11/12 md:w-4/5 m-auto flex justify-between items-center h-20">
-
-                <a href="index.html"><button id="blog-btn" class="font-bold px-4 py-1.5 bg-lime-400 rounded-lg mr-4 sm:mr-0">Home</button></a>
-                
-
+                <a href="index.html"><button id="blog-btn"
+                        class="font-bold px-4 py-1.5 bg-lime-400 rounded-lg mr-4 sm:mr-0">Home</button></a>
                 <div class="flex items-center gap-3">
+                    <h1 class="text-xl font-bold text-right">Donate Bangladesh <span class="font-normal">Blog</span>
+                    </h1>
                     <img class="h-10" src="assets/logo.png" alt="">
-                    <h1 class="text-xl font-bold">Donate Bangladesh Blog</h1>
                 </div>
-
             </nav>
         </div>
-
     </header>
     <main class="w-11/12 md:w-4/5 mx-auto mt-32 pb-20">
         <h1 class="font-bold text-4xl mb-10">Important FAQ ?</h1>
@@ -41,68 +38,63 @@
             <!-- Question 1 -->
             <div class="p-4 flex flex-col gap-4 border-2 rounded-lg">
                 <div class="flex justify-between items-center">
-                    <h2 id="question-1"  class="font-bold">How can I make a donation?</h2>
+                    <h2 id="question-1" class="font-bold mr-1">What is the Document Object Model (DOM)?</h2>
                     <div>
                         <i id="q-1-open" class="fa-solid fa-chevron-down"></i>
                         <i id="q-1-close" class="fa-solid fa-chevron-up hidden"></i>
                     </div>
-                    
                 </div>
-                <p id="answer-1" class="hidden">You can donate via our website using secure payment options, including credit/debit cards, PayPal, or bank transfers.</p>
+                <p id="answer-1" class="hidden">The Document Object Model (DOM) is a programming interface for web
+                    documents that represents a webpage's structure as a tree. It enables programming languages like
+                    JavaScript to interact with, modify, and manipulate the content, layout, and styling of the webpage.
+                </p>
             </div>
             <!-- Question 2 -->
             <div class="p-4 flex flex-col gap-4 border-2 rounded-lg">
                 <div class="flex justify-between items-center">
-                    <h2 id="question-2"  class="font-bold">Are donations tax-deductible?</h2>
+                    <h2 id="question-2" class="font-bold mr-1">How do you select an element from the DOM?</h2>
                     <div>
                         <i id="q-2-open" class="fa-solid fa-chevron-down"></i>
                         <i id="q-2-close" class="fa-solid fa-chevron-up hidden"></i>
                     </div>
-                    
                 </div>
-                <p id="answer-2" class="hidden">Yes, donations are typically tax-deductible. Please consult with a tax advisor for specific details related to your donation.</p>
+                <p id="answer-2" class="hidden">To select an element from the DOM, you can use methods like
+                    getElementById() to select by ID, getElementsByClassName() or getElementsByTagName() for class and
+                    tag name, respectively. For more flexible selectors, querySelector() grabs the first matching
+                    element, while querySelectorAll() selects all matching elements based on a CSS selector. These
+                    methods allow you to easily target and manipulate specific parts of the webpage.</p>
             </div>
             <!-- Question 3 -->
             <div class="p-4 flex flex-col gap-4 border-2 rounded-lg">
                 <div class="flex justify-between items-center">
-                    <h2 id="question-3"  class="font-bold">Can I specify how my donation is used?</h2>
+                    <h2 id="question-3" class="font-bold mr-1">What is event delegation in the context of the DOM, and
+                        why is it useful?</h2>
                     <div>
                         <i id="q-3-open" class="fa-solid fa-chevron-down"></i>
                         <i id="q-3-close" class="fa-solid fa-chevron-up hidden"></i>
                     </div>
-                    
                 </div>
-                <p id="answer-3" class="hidden">Absolutely! You can designate your donation to specific programs or allow us to allocate it where it's most needed.</p>
+                <p id="answer-3" class="hidden">Event delegation is a technique where a parent element handles events
+                    from its child elements using a single event listener. It improves performance by reducing the
+                    number of listeners and makes it easier to manage dynamic elements added to the DOM later.</p>
             </div>
             <!-- Question 4 -->
             <div class="p-4 flex flex-col gap-4 border-2 rounded-lg">
                 <div class="flex justify-between items-center">
-                    <h2 id="question-4"  class="font-bold">Is my personal information secure when I donate?</h2>
+                    <h2 id="question-4" class="font-bold mr-1">How do you manipulate an element's attributes and styles
+                        using the DOM?</h2>
                     <div>
                         <i id="q-4-open" class="fa-solid fa-chevron-down"></i>
                         <i id="q-4-close" class="fa-solid fa-chevron-up hidden"></i>
                     </div>
-                    
                 </div>
-                <p id="answer-4" class="hidden">Yes, we use industry-standard encryption to protect your personal and payment information during the donation process.</p>
+                <p id="answer-4" class="hidden">You can manipulate an element's attributes and styles using the DOM by
+                    employing methods like setAttribute() to add or change attributes, getAttribute() to retrieve
+                    attribute values, and removeAttribute() to delete attributes. For styling, access the style property
+                    to modify inline CSS directly, such as changing colors or font sizes. These techniques allow for
+                    dynamic adjustments to an element's behavior and appearance.</p>
             </div>
-            <!-- Question 5 -->
-            <div class="p-4 flex flex-col gap-4 border-2 rounded-lg">
-                <div class="flex justify-between items-center">
-                    <h2 id="question-5"  class="font-bold">Can I set up recurring donations?</h2>
-                    <div>
-                        <i id="q-5-open" class="fa-solid fa-chevron-down"></i>
-                        <i id="q-5-close" class="fa-solid fa-chevron-up hidden"></i>
-                    </div>
-                    
-                </div>
-                <p id="answer-5" class="hidden">Yes, you can choose to make recurring donations on a monthly, quarterly, or annual basis for continued support.</p>
-            </div>
-            
-            
         </div>
-       
-
     </main>
     <script src="Js/blog.js"></script>
 </body>
